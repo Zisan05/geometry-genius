@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header>
+<div class="flex flex-cols justify-between items-center w-[1500px] ml-[100px] bg-sky-200 px-[20px]">
+    <div>
+        <h1 class="text-[48px] font-bold">Interactive</h1>
+        <p class="text-[25px]">Geometry Genius</p>
+    </div>
+    <div>
+        <button class="bg-blue-600 text-[25px] px-[20px] rounded-[10px] text-white hover:bg-green-400">Blog</button>
+    </div>
+</div>
+    </header>
+    <main>
+<section class="flex flex-cols mt-[50px] justify-between w-[1600px]">
+<div class="grid grid-cols-3 gap-[50px]">
+    <!-- First card -->
+    <div class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+        <div class="card-body text-center">
+          <h2 class="text-center text-[30px] font-bold">Triangle</h2>
+          <p>Area (A) = 0.5 X b X h</p>
+          <p>
+        <input type="text" name="" id="base-input" placeholder="base" class="border w-[60px] bg-gray-200"><span>cm</span>
+
+        <input type="text" name="" id="height-input" placeholder="height" class="border w-[60px] bg-gray-200"><span>cm</span>
+    </p>
+    <p class="font-bold">Area: <span id="area-input">00</span>cm <sup>2</sup></p>
+          <div class="card-actions">
+            <button onclick="Trianglearea()" class="bg-blue-500 text-white w-full p-[10px] rounded-[10px] hover:bg-green-400">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+<!-- second card -->
+<div class="card w-96 bg-base-100 shadow-xl">
+    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+    <div class="card-body text-center">
+      <h2 class="text-center text-[30px] font-bold">Rectangle</h2>
+      <p>Area (A) = l X w</p>
+      <p>
+    <input type="text" name="" id="length-input" placeholder="length" class="border w-[60px] bg-gray-200"><span>cm</span>
+
+    <input type="text" name="" id="width-input" placeholder="width" class="border w-[60px] bg-gray-200"><span>cm</span>
+</p>
+<p>Area: <span id="area-input2">00</span>cm <sup>2</sup></p>
+      <div class="card-actions">
+        <button onclick="Rectanglearea()" class="bg-blue-500 text-white w-full p-[10px] rounded-[10px] hover:bg-green-400">Calculate</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- third card  -->
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+    <div class="card-body text-center">
+      <h2 class="text-center text-[30px] font-bold">Parallelogram</h2>
+      <p>Area (A) =b X h</p>
+      <p>
+    <input type="text" name="" id="base-input1" placeholder="base" class="border w-[60px] bg-gray-200"><span>cm</span>
+
+    <input type="text" name="" id="height-input1" placeholder="height" class="border w-[60px] bg-gray-200"><span>cm</span>
+</p>
+<p>Area: <span id="area-input3">00</span>cm <sup>2</sup></p>
+      <div class="card-actions">
+        <button onclick="Parallelogramarea()" class="bg-blue-500 text-white w-full p-[10px] rounded-[10px] hover:bg-green-400">Calculate</button>
+      </div>
+    </div>
+  </div>
     
+</div>
+<p class="text-[20px] mr-[80px] h-[400px] w-[200px] ">Area Calculation</p>
+
+</section>
+    </main>
+    
+
+    <script src="js/geometry.js"></script>
 </body>
 </html>
